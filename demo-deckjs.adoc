@@ -1,0 +1,18 @@
+= The prez !
+Baptiste Mathus
+:backend: deckjs
+:deckjs_transition: fade
+:navigation:
+:deckjsdir: .deck.js
+
+== First slide
+
+Some text
+
+* some text in a bullet point
+* another one
+
+== Second slide
+
+* Blah
+* Bluh

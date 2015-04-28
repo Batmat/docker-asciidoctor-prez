@@ -1,0 +1,22 @@
+= Docker Asciidoctor Image with support for building presentations (slides)
+
+Currently supports at least Deck.js.
+
+== How to use it
+
+By default, the image will try to process a file named _prez.adoc_.
+To override that, pass the PREZ variable to give your presentation name.
+
+Example :
+
+    $ docker run -e PREZ=demo-deckjs.adoc -v `pwd`:/documents batmat/asciidoctor-prez
+
+Then browse the .html generated file. 
+
+Note : for the demo to work, you'll need to clone the deck.js repository:
+
+    $ git clone https://github.com/imakewebthings/deck.js.git .deck.js
+
+== Details
+
+This docker image is based on the official asciidoctor/docker-asciidoctor image.
